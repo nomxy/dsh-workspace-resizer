@@ -1,0 +1,5 @@
+# dsh-workspace-resizer — 本地插件：侧边栏「工作区」与导航之间的可拖动分隔条。
+# 纯客户端：宿主半是空插件，布局调整全在 lib/client.js 里做。
+- insert:
+    - id: workspace-resizer
+      name: 'dsh-workspace-resizer'

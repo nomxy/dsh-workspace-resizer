@@ -1,0 +1,54 @@
+{
+  "name": "dsh-workspace-resizer",
+  "version": "0.1.0",
+  "description": "Draggable splitter between the sidebar panel list and the workspace region, so the session list can grow. · 侧边栏「工作区」会话区与导航之间的可拖动分隔条。",
+  "type": "module",
+  "license": "MIT",
+  "author": "nomxy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomxy/dsh-workspace-resizer.git"
+  },
+  "homepage": "https://github.com/nomxy/dsh-workspace-resizer#readme",
+  "bugs": {
+    "url": "https://github.com/nomxy/dsh-workspace-resizer/issues"
+  },
+  "icon": "icon.svg",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*": "./locale/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "README.md",
+    "icon.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "sidebar",
+    "layout",
+    "resizer",
+    "splitter",
+    "workspace",
+    "session-list"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
